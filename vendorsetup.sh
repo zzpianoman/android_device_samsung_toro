@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo full_toro-userdebug
+add_lunch_combo cm_toro-userdebug
