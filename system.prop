@@ -22,9 +22,7 @@ ro.telephony.toroRIL=1
 ro.ril.ecclist=112,911,#911,*911
 
 # Invokes parameters for needsOldRilFeature to fix Toro radio
-ro.telephony.ril.config=datacallapn,signalstrength,usevoicetechfordata,writeaidonly
-
-ro.cdma.subscribe_on_ruim_ready=true
+ro.telephony.ril.config=signalstrength,usevoicetechfordata,writeaidonly,skipnullaid
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
