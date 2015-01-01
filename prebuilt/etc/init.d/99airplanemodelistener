@@ -1,0 +1,38 @@
+#!/system/bin/sh
+#
+# Fixes no data after airplane mode for Cyanogenmod ROMS on Toro. 
+# 
+# Listens for airplane mode and kills phone process when airplane mode
+# is turned off, enabling phone to reestablish data connection. 
+#
+
+#sleep 10
+
+PID=$$
+echo -17 > /proc/$PID/oom_adj
+
+isAirplaneMode=`settings get global airplane_mode_on`
+wasAirplaneMode=0
+
+while true
+do   
+    
+	if [ $isAirplaneMode != $wasAirplaneMode ]; then
+		if [ $isAirplaneMode == 0 ]; then
+			kill -SIGTERM `pidof com.android.phone`
+			echo "phone process terminated"
+		fi
+		isAirplaneMode=`settings get global airplane_mode_on`
+		wasAirplaneMode=$isAirplaneMode	
+		sleep 1
+	
+	else
+	isAirplaneMode=`settings get global airplane_mode_on`
+	sleep 1
+	fi
+        
+done
+
+
+
+
