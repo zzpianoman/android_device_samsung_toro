@@ -15,6 +15,8 @@ persist.radio.imsallowmtsms=1
 # Store correct IMSI when retreived from SIMRecords and use it for Ruim Records
 ro.telephony.get_imsi_from_sim=true
 
+ro.cdma.subscribe_on_ruim_ready=true
+
 # Enable code specific to toro's RIL
 ro.telephony.toroRIL=1
 
@@ -22,7 +24,7 @@ ro.telephony.toroRIL=1
 ro.ril.ecclist=112,911,#911,*911
 
 # Invokes parameters for needsOldRilFeature to fix Toro radio
-ro.telephony.ril.config=signalstrength,usevoicetechfordata,writeaidonly,skipnullaid
+ro.telephony.ril.config=signalstrength,usevoicetechfordata,writeaidonly,datacallapn
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
