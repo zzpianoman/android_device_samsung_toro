@@ -17,12 +17,13 @@ ro.telephony.get_imsi_from_sim=true
 
 # Enable code specific to toro's RIL
 ro.telephony.toro_apm_fix=1
+ro.telephony.toroRIL=1
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
 
 # Invokes parameters for needsOldRilFeature to fix Toro radio
-ro.telephony.ril.config=usevoicetechfordata,writeaidonly,signalstrength
+ro.telephony.ril.config=usevoicetechfordata,writeaidonly
 
 # Default to LTE/CDMA Network Mode
 ro.telephony.default_network=7
@@ -34,7 +35,7 @@ ro.telephony.default_cdma_sub=0
 persist.telephony.oosisdc=false
 
 # Don't power down SIM in airplane mode
-#persist.radio.apm_sim_not_pwdn=1
+persist.radio.apm_sim_not_pwdn=1
 
 # Default CDMA/LTE values from 4.2.2 OTA
 ro.cdma.home.operator.numeric=311480
