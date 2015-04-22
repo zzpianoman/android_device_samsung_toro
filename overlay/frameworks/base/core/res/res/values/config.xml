@@ -63,4 +63,12 @@
     <!-- Configuration to sending and receiving Mms when mobile data is disable.-->
     <bool name="config_enable_mms_with_mobile_data_off">true</bool>
 
+    <!-- Flag indicating whether strict threshold is used, or lenient threshold is used,
+          when evaluating RSRP for LTE antenna bar display
+           0. Strict threshold
+           1. Lenient threshold
+    -->
+    <integer name="config_LTE_RSRP_threshold_type">0</integer>
+     
+
 </resources>
