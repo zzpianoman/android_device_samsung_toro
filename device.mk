@@ -22,7 +22,6 @@ DEVICE_PACKAGE_OVERLAYS := device/samsung/toro/overlay
 
 PRODUCT_COPY_FILES += \
 	device/samsung/toro/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-	device/samsung/toro/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
