@@ -17,6 +17,18 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
+
+    <string-array name="enabled_networks_cdma_choices" translatable="false">
+        <item>@string/network_lte</item>
+        <item>@string/network_3G</item>
+    </string-array>
+
+    <string-array name="enabled_networks_cdma_values" translatable="false">
+        <item>"8"</item>
+        <item>"4"</item>
+    </string-array>
+
+    <string name="config_world_mode" translatable="false">false</string> 
         
     <!-- Show APN Settings for some CDMA carriers -->
     <bool name="config_show_apn_setting_cdma">true</bool>
