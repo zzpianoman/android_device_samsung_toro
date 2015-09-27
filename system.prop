@@ -17,7 +17,7 @@ ro.telephony.get_imsi_from_sim=true
 
 # Enable code specific to toro's RIL
 ro.telephony.toro_apm_fix=1
-ro.telephony.toroRIL=1
+# ro.telephony.toroRIL=1
 
 # Default ecclist
 ro.ril.ecclist=112,911,#911,*911
