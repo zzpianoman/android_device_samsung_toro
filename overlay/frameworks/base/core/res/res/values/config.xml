@@ -60,9 +60,6 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Configuration to sending and receiving Mms when mobile data is disable.-->
-    <bool name="config_enable_mms_with_mobile_data_off">true</bool>
-
     <!-- Flag indicating whether strict threshold is used, or lenient threshold is used,
           when evaluating RSRP for LTE antenna bar display
            0. Strict threshold
